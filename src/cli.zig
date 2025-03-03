@@ -8,7 +8,7 @@ const check_exe = @import("cli/check.zig");
 const fmt_exe = @import("cli/fmt.zig");
 const lsp_exe = @import("cli/lsp.zig");
 
-pub const known_folders_config = .{
+pub const known_folders_config: @import("known-folders").KnownFolderConfig = .{
     .xdg_force_default = true,
     .xdg_on_mac = true,
 };

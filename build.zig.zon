@@ -1,18 +1,20 @@
 .{
-    .name = "superhtml",
-    .version = "0.4.0",
+    .name = .superhtml,
+    .version = "0.5.0",
+    .fingerprint = 0xc5e9aede2f858f0d,
+    .minimum_zig_version = "0.14.0-dev.3451+d8d2aa9af",
     .dependencies = .{
-        .@"zig-lsp-kit" = .{
-            .url = "git+https://github.com/kristoff-it/zig-lsp-kit#b4bf61d7fbf9cf7cfdb6f01b211947d2de3e42fd",
-            .hash = "1220b9ce6dc0e1fbcd9e7b406ab164344f81774351495f860a90729187c3c058ef4f",
+        .lsp_kit = .{
+            .url = "https://github.com/andrewrk/zig-lsp-kit/archive/e05a3914867710ee89ed3c3aa3564f49be9d13a5.tar.gz",
+            .hash = "lsp_kit-0.1.0-hAAxO95zBQDEINKN-FGsKKEfTMDEKxcYIu4Z_PDJs2Hp",
         },
-        .@"known-folders" = .{
-            .url = "git+https://github.com/ziglibs/known-folders#1cceeb70e77dec941a4178160ff6c8d05a74de6f",
-            .hash = "12205f5e7505c96573f6fc5144592ec38942fb0a326d692f9cddc0c7dd38f9028f29",
+        .known_folders = .{
+            .url = "git+https://github.com/ziglibs/known-folders#aa24df42183ad415d10bc0a33e6238c437fc0f59",
+            .hash = "known_folders-0.0.0-Fy-PJtLDAADGDOwYwMkVydMSTp_aN-nfjCZw6qPQ2ECL",
         },
         .scripty = .{
-            .url = "git+https://github.com/kristoff-it/scripty#c76ef31dd5429725220de30504bde89a68565ece",
-            .hash = "1220c242654fe9bdd1be1fdb7b8e142842adc9adcc987efe7eb64af6451f45cbbc34",
+            .url = "https://github.com/andrewrk/scripty/archive/d9fdf866bb2a9913df012781b1cb47ad9954e2fd.tar.gz",
+            .hash = "scripty-0.2.0-Qght9ei-AAC0s2BIoGeEt-QZhnG2Qoxq3SR3rikr2mdD",
         },
         .@"zig-afl-kit" = .{
             .url = "git+https://github.com/kristoff-it/zig-afl-kit#f003bfe714f2964c90939fdc940d5993190a66ec",
